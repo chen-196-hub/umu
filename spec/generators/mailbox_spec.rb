@@ -1,4 +1,4 @@
-require_relative '../../umu/generators/mailbox'
+require_relative '../../lib/umu/generators/mailbox'
 
 RSpec.describe Mailbox do
   describe '.generator' do

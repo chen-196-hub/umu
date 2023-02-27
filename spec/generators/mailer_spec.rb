@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../umu/generators/mailer'
+require_relative '../../lib/umu/generators/mailer'
 
 RSpec.describe Mailer do
   describe '.generator' do

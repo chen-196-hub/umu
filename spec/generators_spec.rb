@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative '../umu/generators'
-require_relative '../umu/generators/model'
-require_relative '../umu/generators/controller'
+require_relative '../lib/umu/generators'
+require_relative '../lib/umu/generators/model'
+require_relative '../lib/umu/generators/controller'
 
 RSpec.describe Umu::Generators do
   context '.model' do

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../umu/beautifica/assets/color'
+require_relative '../../lib/umu/beautifica/assets/color'
 
 RSpec.describe 'colors' do
   include Color

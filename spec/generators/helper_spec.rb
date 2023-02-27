@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../umu/generators/helper'
+require_relative '../../lib/umu/generators/helper'
 
 RSpec.describe Helper do
   describe '.generator' do

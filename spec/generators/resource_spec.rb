@@ -1,4 +1,4 @@
-require_relative '../../umu/generators/resource'
+require_relative '../../lib/umu/generators/resource'
 
 RSpec.describe Resource do
   describe '.generator' do

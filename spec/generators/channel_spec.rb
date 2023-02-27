@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../umu/generators/channel'
+require_relative '../../lib/umu/generators/channel'
 
 RSpec.describe Channel do
   describe '.generator' do

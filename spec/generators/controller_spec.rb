@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../umu/generators/controller'
+require_relative '../../lib/umu/generators/controller'
 
 # 修正必要ある
 RSpec.describe Controller do
