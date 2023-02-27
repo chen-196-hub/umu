@@ -1,4 +1,4 @@
-require_relative '../../umu/generators/benchmark'
+require_relative '../../lib/umu/generators/benchmark'
 
 RSpec.describe Benchmark do
   describe '.generator' do

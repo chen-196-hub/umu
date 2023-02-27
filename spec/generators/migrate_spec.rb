@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative '../../umu/generators/migration'
+require_relative '../../lib/umu/generators/migration'
 
-describe Migration do
+RSpec.describe Migration do
   describe '.generator' do
     context 'when user do not make column' do
       before do

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../umu/generators/application_record'
+require_relative '../../lib/umu/generators/application_record'
 
 RSpec.describe ApplicationRecord do
   describe '.generator' do

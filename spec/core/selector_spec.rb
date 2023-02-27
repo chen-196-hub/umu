@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../umu/core/selector'
+require_relative '../../lib/umu/core/selector'
 require 'io/console'
 
 RSpec.describe Umu::Selector do
