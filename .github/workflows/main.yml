@@ -1,4 +1,4 @@
-name: Ruby
+name: Run test ⚙️
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Set up Ruby
+    - name: Set up Ruby 💎
       uses: ruby/setup-ruby@359bebbc29cbe6c87da6bc9ea3bc930432750108
       with:
         ruby-version: ${{ matrix.ruby }}
@@ -29,5 +29,4 @@ jobs:
         bundle install --jobs 4 --retry 3 --path vendor/bundle
           
     - name: Run rspec 🛑
-      run: bundle exec rspec fibo_spec.rb    
-
+      run: bundle exec rspec spec
