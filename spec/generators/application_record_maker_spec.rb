@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative '../../lib/umu/generators/application_record'
+require_relative '../../lib/umu/generators/application_record_maker'
 
-RSpec.describe ApplicationRecord do
+RSpec.describe ApplicationRecordMaker do
   describe '.generator' do
     context 'when user do not make column' do
       before do

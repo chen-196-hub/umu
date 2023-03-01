@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative '../../lib/umu/generators/controller'
+require_relative '../../lib/umu/generators/controller_maker'
 
 # 修正必要ある
-RSpec.describe Controller do
+RSpec.describe ControllerMaker do
   describe '.generator' do
     context 'when user do not make action' do
       before do

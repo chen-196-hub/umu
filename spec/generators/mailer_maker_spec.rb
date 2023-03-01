@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative '../../lib/umu/generators/mailer'
+require_relative '../../lib/umu/generators/mailer_maker'
 
-RSpec.describe Mailer do
+RSpec.describe MailerMaker do
   describe '.generator' do
     before do
       allow(Umu::Inputter).to receive(:input).and_return('test')

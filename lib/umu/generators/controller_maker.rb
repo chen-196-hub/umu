@@ -4,7 +4,7 @@ require_relative '../core/inputter'
 require_relative '../core/selector'
 require_relative '../beautifica/beautifica'
 
-module Controller
+module ControllerMaker
   class << self
     include Template
     ACTIONS = %w[

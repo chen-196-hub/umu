@@ -1,6 +1,6 @@
-require_relative '../../lib/umu/generators/benchmark'
+require_relative '../../lib/umu/generators/benchmark_maker'
 
-RSpec.describe Benchmark do
+RSpec.describe BenchmarkMaker do
   describe '.generator' do
     before do
       allow(Umu::Inputter).to receive(:input).and_return('test')

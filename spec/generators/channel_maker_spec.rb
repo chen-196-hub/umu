@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-require_relative '../../lib/umu/generators/migration'
+require_relative '../../lib/umu/generators/channel_maker'
 
-RSpec.describe Migration do
+RSpec.describe ChannelMaker do
   describe '.generator' do
-    context 'when user do not make column' do
+    context 'when user make channel' do
       before do
         allow(Umu::Inputter).to receive(:input).and_return('test')
         allow(Umu::Selector).to receive(:single_choice).and_return(false)
       end
-      it 'generates controller' do
+      it 'generates channel' do
         expect(described_class.generator).to eq(true)
       end
     end
