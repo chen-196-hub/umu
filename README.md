@@ -1,6 +1,6 @@
 # Umu (prototype)
 
-Umu is a framework that supports your to make & run command in Ruby on Rails
+Umu is a framework that supports you to make & run command in Ruby on Rails
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
