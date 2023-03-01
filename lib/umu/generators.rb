@@ -1,66 +1,66 @@
 # frozen_string_literal: true
 
-require_relative 'generators/model'
-require_relative 'generators/controller'
-require_relative 'generators/migration'
-require_relative 'generators/application_record'
-require_relative 'generators/helper'
-require_relative 'generators/channel'
-require_relative 'generators/job'
-require_relative 'generators/task'
-require_relative 'generators/mailer'
-require_relative 'generators/mailbox'
-require_relative 'generators/benchmark'
-require_relative 'generators/resource'
+require_relative 'generators/model_maker'
+require_relative 'generators/controller_maker'
+require_relative 'generators/migration_maker'
+require_relative 'generators/application_record_maker'
+require_relative 'generators/helper_maker'
+require_relative 'generators/channel_maker'
+require_relative 'generators/job_maker'
+require_relative 'generators/task_maker'
+require_relative 'generators/mailer_maker'
+require_relative 'generators/mailbox_maker'
+require_relative 'generators/benchmark_maker'
+require_relative 'generators/resource_maker'
 
 module Umu
   module Generators
     def self.model
-      Model.generator
+      ModelMaker.generator
     end
 
     def self.controller
-      Controller.generator
+      ControllerMaker.generator
     end
 
     def self.migration
-      Migration.generator
+      MigrationMaker.generator
     end
 
     def self.application_record
-      ApplicationRecord.generator
+      ApplicationRecordMaker.generator
     end
 
     def self.helper
-      Helper.generator
+      HelperMaker.generator
     end
 
     def self.channel
-      Channel.generator
+      ChannelMaker.generator
     end
 
     def self.job
-      Job.generator
+      JobMaker.generator
     end
 
     def self.task
-      Task.generator
+      TaskMaker.generator
     end
 
     def self.mailer
-      Mailer.generator
+      MailerMaker.generator
     end
 
     def self.mailbox
-      Mailbox.generator
+      MailboxMaker.generator
     end
 
     def self.benchmark
-      Benchmark.generator
+      BenchmarkMaker.generator
     end
     
     def self.resource
-      Resource.generator
+      ResourceMaker.generator
     end
   end
 end

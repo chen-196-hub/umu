@@ -4,7 +4,7 @@ require_relative '../core/inputter'
 require_relative '../core/selector'
 require_relative '../beautifica/beautifica'
 
-module Mailbox
+module MailboxMaker
   class << self
     include Template
     def generator

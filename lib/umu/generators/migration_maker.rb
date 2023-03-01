@@ -4,7 +4,7 @@ require_relative '../core/inputter'
 require_relative '../core/selector'
 require_relative '../beautifica/beautifica'
 
-module Migration
+module MigrationMaker
   class << self
     include Template
     COLUMN_TYPE = %w[
