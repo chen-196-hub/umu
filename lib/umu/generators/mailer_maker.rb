@@ -4,6 +4,7 @@ require_relative '../core/inputter'
 require_relative '../core/selector'
 require_relative '../beautifica/beautifica'
 
+# MailerMaker is a module for generating mailer.
 module MailerMaker
   class << self
     include Template

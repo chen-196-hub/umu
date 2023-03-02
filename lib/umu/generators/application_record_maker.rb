@@ -4,6 +4,7 @@ require_relative '../core/inputter'
 require_relative '../core/selector'
 require_relative '../beautifica/beautifica'
 
+# ApplicationRecordMaker is a module for generating application_record.
 module ApplicationRecordMaker
   class << self
     include Template

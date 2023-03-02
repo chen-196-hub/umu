@@ -14,6 +14,8 @@ require_relative 'generators/benchmark_maker'
 require_relative 'generators/resource_maker'
 
 module Umu
+  ##
+  # Umu is a tool for automatically generating Rails code.
   module Generators
     def self.model
       ModelMaker.generator
@@ -58,7 +60,7 @@ module Umu
     def self.benchmark
       BenchmarkMaker.generator
     end
-    
+
     def self.resource
       ResourceMaker.generator
     end

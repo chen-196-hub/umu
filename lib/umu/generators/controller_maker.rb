@@ -4,6 +4,7 @@ require_relative '../core/inputter'
 require_relative '../core/selector'
 require_relative '../beautifica/beautifica'
 
+# ControllerMaker is a module for generating controller.
 module ControllerMaker
   class << self
     include Template

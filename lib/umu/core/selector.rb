@@ -4,6 +4,7 @@ require 'io/console'
 require_relative '../beautifica/beautifica'
 
 module Umu
+  # Selector is a module for selecting items.
   class Selector
     extend Template
     def self.radio(opts = [], content = '')
@@ -47,7 +48,6 @@ module Umu
         while (key = $stdin.getch) != "\C-c"
           if key == "\e"
             second_key = $stdin.getch
-
             if second_key == '['
               key = $stdin.getch
               case key
