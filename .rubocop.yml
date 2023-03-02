@@ -1,5 +1,12 @@
 AllCops:
   TargetRubyVersion: 2.6
+  Exclude:
+    - 'Gemfile'
+    - 'Rakefile'
+    - 'umu.gemspec'
+    - 'bin/console'
+    - 'exe/umu'
+    - 'lib/umu/version.rb'
 
 # Style/StringLiterals:
 #   Enabled: true
@@ -8,6 +15,8 @@ AllCops:
 # Style/StringLiteralsInInterpolation:
 #   Enabled: true
 #   EnforcedStyle: double_quotes
+Style/FrozenStringLiteralComment:
+  Enabled: false
 
 Layout/LineLength:
   Max: 120
