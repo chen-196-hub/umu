@@ -2,6 +2,7 @@ require_relative '../core/inputter'
 require_relative '../core/selector'
 require_relative '../beautifica/beautifica'
 
+# BenchmarkMaker is a module for generating benchmark.
 module BenchmarkMaker
   class << self
     include Template

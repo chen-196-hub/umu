@@ -4,6 +4,7 @@ require_relative '../core/inputter'
 require_relative '../core/selector'
 require_relative '../beautifica/beautifica'
 
+# JobMaker is a module for generating job.
 module JobMaker
   class << self
     include Template

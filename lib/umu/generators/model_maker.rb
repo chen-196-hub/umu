@@ -4,6 +4,7 @@ require_relative '../core/inputter'
 require_relative '../core/selector'
 require_relative '../beautifica/beautifica'
 
+# ModelMaker is a module for generating model.
 module ModelMaker
   class << self
     include Template

@@ -3,6 +3,7 @@ require_relative '../core/inputter'
 require_relative '../core/selector'
 require_relative '../beautifica/beautifica'
 
+# ResourceMaker is a module for generating resource.
 module ResourceMaker
   class << self
     include Template
@@ -42,7 +43,7 @@ module ResourceMaker
       options = Umu::Inputter.input('オプションを入力してください', true) if is_make_options
       cover(1) if is_make_options
 
-      command = "rails generate resource #{resource_name} " + "#{columns.join(' ')}" + " #{options}"
+      command = "rails generate resource #{resource_name}" + " #{columns.join(' ')}" + " #{options}"
       cover(1)
       puts command
       confirm_content = '上記コマンド実行しますか？'

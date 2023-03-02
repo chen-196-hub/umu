@@ -4,6 +4,7 @@ require_relative '../core/inputter'
 require_relative '../core/selector'
 require_relative '../beautifica/beautifica'
 
+# HelperMaker is a module for generating helper.
 module HelperMaker
   class << self
     include Template
