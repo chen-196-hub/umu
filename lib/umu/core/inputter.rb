@@ -4,6 +4,7 @@ require_relative 'validation'
 require_relative '../beautifica/beautifica'
 
 module Umu
+  # Inputter is a module for inputting.
   class Inputter
     extend Template
     def self.input(content, has_vaild = false, check_target = [])

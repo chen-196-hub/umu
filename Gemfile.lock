@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    umu (0.1.2)
+    umu (0.1.3)
       activesupport (>= 3.0.0)
 
 GEM
@@ -58,6 +58,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
+  x86_64-darwin-21
 
 DEPENDENCIES
   rake (~> 13.0)

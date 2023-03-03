@@ -1,6 +1,12 @@
 # Umu (prototype)
 
 Umu is a framework that supports you to make & run command in Ruby on Rails
+
+
+
+https://user-images.githubusercontent.com/78460152/222332886-50337710-4fc8-4437-b82a-f1a64edd95f3.mov
+
+
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:

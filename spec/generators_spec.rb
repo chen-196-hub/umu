@@ -17,5 +17,4 @@ RSpec.describe Umu::Generators do
     end
     it { expect(Umu::Generators.controller).to eq(true) }
   end
-
 end

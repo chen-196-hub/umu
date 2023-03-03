@@ -4,6 +4,7 @@ require_relative '../core/inputter'
 require_relative '../core/selector'
 require_relative '../beautifica/beautifica'
 
+# ChannelMaker is a module for generating channel.
 module ChannelMaker
   class << self
     include Template

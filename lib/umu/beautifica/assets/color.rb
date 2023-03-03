@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Color module is a module for colorizing string.
 module Color
   COLORS = {
     black: 30,

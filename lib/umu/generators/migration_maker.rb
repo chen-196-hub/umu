@@ -4,6 +4,7 @@ require_relative '../core/inputter'
 require_relative '../core/selector'
 require_relative '../beautifica/beautifica'
 
+# MigrationMaker is a module for generating migration.
 module MigrationMaker
   class << self
     include Template
