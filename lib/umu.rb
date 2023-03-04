@@ -19,6 +19,6 @@ module Umu
     target = Umu::Selector.radio(items, content)
     puts "\e[2A"
     puts "#{content} #{green(target)}"
-    Umu::Generators.send(target)
+    Umu::Generators.run(target)
   end
 end

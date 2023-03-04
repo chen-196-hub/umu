@@ -20,17 +20,29 @@ RSpec.describe 'colors' do
     it { expect { cover(3) }.to output("\e[3A\e[0J\e[1A\n").to_stdout }
   end
 
-  context "#show_command" do
+  context '#show_command' do
     it { expect { show_command('test') }.to output("\e[32m>\e[0m rails generate test\n").to_stdout }
     it { expect { show_command('test', 'test') }.to output("\e[32m>\e[0m rails generate test test\n").to_stdout }
-    it { expect { show_command('test', 'test', 'test') }.to output("\e[32m>\e[0m rails generate test test test\n").to_stdout }
-    it { expect { show_command('test', 'test', 'test', 'test') }.to output("\e[32m>\e[0m rails generate test test test test\n").to_stdout }
+    it {
+      expect do
+        show_command('test', 'test', 'test')
+      end.to output("\e[32m>\e[0m rails generate test test test\n").to_stdout
+    }
+    it {
+      expect do
+        show_command('test', 'test', 'test',
+                     'test')
+      end.to output("\e[32m>\e[0m rails generate test test test test\n").to_stdout
+    }
   end
-  
-  context "#command" do
+
+  context '#command' do
     it { expect(command('test')).to eq('rails generate test') }
     it { expect(command('test', 'test_name')).to eq('rails generate test test_name') }
     it { expect(command('test', 'test_name', 'sub_test_name')).to eq('rails generate test test_name sub_test_name') }
-    it { expect(command('test', 'test_name', 'sub_test_name', '-test')).to eq('rails generate test test_name sub_test_name -test') }
+    it {
+      expect(command('test', 'test_name', 'sub_test_name',
+                     '-test')).to eq('rails generate test test_name sub_test_name -test')
+    }
   end
 end
