@@ -23,17 +23,17 @@ module ResourceMaker
     def generator
       resource_name = Umu::Inputter.input('リソース名を入力してください (単数)')
       cover(1)
-      puts "#=> rails generate resource #{resource_name}"
+      show_command('resource', resource_name)
       is_make_column = Umu::Selector.single_choice('カラム生成しますか？')
       cover(1)
       columns = []
       while is_make_column
         columns << make_colum
-        puts "#=> rails generate resource #{resource_name} #{columns.join(' ')}"
+        show_command('resource', resource_name, columns.join(' '))
         is_make_column = Umu::Selector.single_choice('作り続けますか？')
         cover(1)
       end
-      puts "#=> rails generate resource #{resource_name} " + columns.join(' ')
+      show_command('resource', resource_name, columns.join(' '))
       cover(1)
 
       is_make_options = Umu::Selector.single_choice('オプションを追加しますか？')
@@ -41,8 +41,7 @@ module ResourceMaker
       options = ''
       options = Umu::Inputter.input('オプションを入力してください', true) if is_make_options
       cover(1) if is_make_options
-
-      command = "rails generate resource #{resource_name}" + " #{columns.join(' ')}" + " #{options}"
+      command = command('resource', resource_name, columns.join(' '), options)
       cover(1)
       puts command
       confirm_content = '上記コマンド実行しますか？'
