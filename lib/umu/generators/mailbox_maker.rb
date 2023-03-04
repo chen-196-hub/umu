@@ -9,15 +9,15 @@ module MailboxMaker
   class << self
     include Template
     def generator
-      mailbox_name = Umu::Inputter.input('メールボックス名を入力してください (例：CreditCard)')
+      mailbox_name = Umu::Inputter.input('メールボックス名を入力してください (例：mailbox_name)')
       cover(1)
-      puts "#=> rails generate mailbox #{mailbox_name}"
+      show_command('mailbox', mailbox_name)
       is_make_options = Umu::Selector.single_choice('オプションを追加しますか？')
       cover(1)
       options = ''
       options = Umu::Inputter.input('オプションを入力してください', true) if is_make_options
       cover(1) if is_make_options
-      command = "rails generate mailbox #{mailbox_name} #{options}"
+      command = command('mailbox', mailbox_name, options)
       cover(1)
       puts command
       confirm_content = '上記コマンド実行しますか？'

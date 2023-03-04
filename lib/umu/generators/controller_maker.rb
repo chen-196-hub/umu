@@ -21,14 +21,15 @@ module ControllerMaker
       controller_name = Umu::Inputter.input('コントローラー名を入力してください (複数)')
       cover(1)
       puts "#=> rails generate controller #{controller_name}"
+      show_command('controller', controller_name)
       make_actions = Umu::Selector.single_choice('アクション生成しますか？')
       cover(1)
       actions = []
       if make_actions
-        actions = Umu::Selector.checkbox(ACTIONS, 'アクションを選択してください。')
+        actions = Umu::Selector.checkbox(ACTIONS, 'アクションを選択してください。<スペースキーで選択できます>')
         cover(1)
         cover(1)
-        puts "#=> rails generate controller #{controller_name} #{actions.join(' ')}"
+        show_command('controller', controller_name, actions.join(' '))
         if actions.include?('other')
           make_action = true
           actions.delete('other')
@@ -36,7 +37,7 @@ module ControllerMaker
             original_action_name = Umu::Inputter.input('アクション名を入力してください', true, actions)
             actions << original_action_name
             cover(2)
-            puts "#=> rails generate controller #{controller_name} #{actions.join(' ')}"
+            show_command('controller', controller_name, actions.join(' '))
             make_action = Umu::Selector.single_choice('作り続けますか？')
             cover(1)
           end
@@ -47,7 +48,7 @@ module ControllerMaker
       cover(1)
       options = Umu::Inputter.input('オプションを入力してください', true) if is_make_options
       cover(1) if is_make_options
-      command = "rails generate controller #{controller_name} #{actions.join(' ')} #{options}"
+      command = command('controller', controller_name, actions.join(' '), options)
       cover(1)
       puts command
       confirm_content = '上記コマンド実行しますか？'

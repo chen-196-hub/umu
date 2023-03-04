@@ -9,9 +9,9 @@ module ChannelMaker
   class << self
     include Template
     def generator
-      channel_name = Umu::Inputter.input('チャネル名を入力してください (例：ChatChannel)')
+      channel_name = Umu::Inputter.input('チャネル名を入力してください (例：channel_name)')
       cover(1)
-      puts "#=> rails generate channel #{channel_name}"
+      show_command('channel', channel_name)
       make_action = Umu::Selector.single_choice('アクションを追加しますか？')
       cover(1)
       actions = []
@@ -20,7 +20,7 @@ module ChannelMaker
         cover(1)
         actions << action_name
         cover(1)
-        puts "#=> rails generate channel #{channel_name} #{actions.join(' ')}"
+        show_command('channel', channel_name, actions.join(' '))
         make_action = Umu::Selector.single_choice('追加続きますか？')
         cover(1)
       end
@@ -30,7 +30,7 @@ module ChannelMaker
       options = ''
       options = Umu::Inputter.input('オプションを入力してください', true) if is_make_options
       cover(1) if is_make_options
-      command = "rails generate channel #{channel_name} " + actions.join(' ').to_s + " #{options}"
+      command = command('channel', channel_name, actions.join(' '), options)
       cover(1)
       puts command
       confirm_content = '上記コマンド実行しますか？'

@@ -9,9 +9,9 @@ module TaskMaker
   class << self
     include Template
     def generator
-      task_name = Umu::Inputter.input('タスク名を入力してください (例：CreditCard)')
+      task_name = Umu::Inputter.input('タスク名を入力してください (例：task_name)')
       cover(1)
-      puts "#=> rails generate task #{task_name}"
+      show_command('task', task_name)
       make_action = Umu::Selector.single_choice('アクションを追加しますか？')
       cover(1)
       actions = []
@@ -20,7 +20,7 @@ module TaskMaker
         cover(1)
         actions << action_name
         cover(1)
-        puts "#=> rails generate channel #{task_name} #{actions.join(' ')}"
+        show_command('task', task_name, actions.join(' '))
         make_action = Umu::Selector.single_choice('追加続きますか？')
         cover(1)
       end
@@ -30,7 +30,7 @@ module TaskMaker
       options = ''
       options = Umu::Inputter.input('オプションを入力してください', true) if is_make_options
       cover(1) if is_make_options
-      command = "rails generate task #{task_name}" + " #{actions.join(' ')}" + " #{options}"
+      command = command('task', task_name, actions.join(' '), options)
       cover(1)
       puts command
       confirm_content = '上記コマンド実行しますか？'
