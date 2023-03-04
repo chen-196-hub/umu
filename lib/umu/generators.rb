@@ -17,52 +17,26 @@ module Umu
   ##
   # Umu is a tool for automatically generating Rails code.
   module Generators
-    def self.model
-      ModelMaker.generator
-    end
+    GENERATORS = {
+      model: ModelMaker,
+      controller: ControllerMaker,
+      migration: MigrationMaker,
+      application_record: ApplicationRecordMaker,
+      helper: HelperMaker,
+      channel: ChannelMaker,
+      job: JobMaker,
+      task: TaskMaker,
+      mailer: MailerMaker,
+      mailbox: MailboxMaker,
+      benchmark: BenchmarkMaker,
+      resource: ResourceMaker
+    }.freeze
 
-    def self.controller
-      ControllerMaker.generator
-    end
+    def self.run(target)
+      generator = GENERATORS[target.to_sym].generator
+      raise "Invalid target #{target}" unless generator
 
-    def self.migration
-      MigrationMaker.generator
-    end
-
-    def self.application_record
-      ApplicationRecordMaker.generator
-    end
-
-    def self.helper
-      HelperMaker.generator
-    end
-
-    def self.channel
-      ChannelMaker.generator
-    end
-
-    def self.job
-      JobMaker.generator
-    end
-
-    def self.task
-      TaskMaker.generator
-    end
-
-    def self.mailer
-      MailerMaker.generator
-    end
-
-    def self.mailbox
-      MailboxMaker.generator
-    end
-
-    def self.benchmark
-      BenchmarkMaker.generator
-    end
-
-    def self.resource
-      ResourceMaker.generator
+      generator
     end
   end
 end
