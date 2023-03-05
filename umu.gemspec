@@ -5,12 +5,12 @@ require_relative "lib/umu/version"
 Gem::Specification.new do |spec|
   spec.name = "umu"
   spec.version = Umu::VERSION
-  spec.authors = ["196"]
+  spec.authors = ["Kuan-Hung Chen"]
   spec.email = ["kankou.chin@gmail.com"]
 
   spec.summary = "A framework for make Ruby on Rails's command."
   spec.description = <<-DESCRIPTION
-    Umu is a framework that supports your to make command in Ruby on Rails.
+    Umu is a framework that supports you to make command in Ruby on Rails.
   DESCRIPTION
   spec.homepage = "https://github.com/chen-196-hub/umu"
   spec.license = "MIT"
