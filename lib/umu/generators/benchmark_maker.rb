@@ -13,6 +13,7 @@ module BenchmarkMaker
       confirm_content = '上記コマンドを実行しますか？'
       run_command = Umu::Selector.single_choice(confirm_content)
       cover(1)
+      command = command('benchmark', benchmark_name)
       puts confirm_content + (run_command ? 'はい' : 'いいえ')
       system(command) if run_command
       true
