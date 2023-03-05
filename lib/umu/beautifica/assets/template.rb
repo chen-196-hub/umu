@@ -31,5 +31,16 @@ module Template
     puts green('>') + " #{command(generator_name, target_name, sub_items, options)}"
   end
 
+  def logo
+    print <<-'UMU'
+     _   _
+    | | | |_ __ ___  _   _ 
+    | | | | '_ ` _ \| | | |
+    | |_| | | | | | | |_| |
+     \___/|_| |_| |_|\__,_|
+
+    UMU
+  end
+
   module_function :pointer, :checker, :hover, :cover, :show_command, :command
 end
