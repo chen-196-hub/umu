@@ -1,2 +1,58 @@
 zh:
   umu: '請選擇生成類別。'
+  affirm: '是'
+  deny: '不'
+  inputter:
+    required: '必填項目'
+    is_overlap: '重複'
+  common:
+    make_options: '要添加選項嗎？（options）'
+    add_option: '請輸入選項'
+    run_command: '要執行指令嗎？'
+  benchmark:
+    make_name: '請輸入Benchmark名 (例：benchmark_name)'
+  channel:
+    make_name: '請輸入Channel名 (例：channel_name)'
+    make_actions: '要添加Actions嗎？'
+    make_action_name: '請輸入Action名 (例：subscribed)'
+    make_action_continue: '要繼續添加Action嗎？'
+  controller:
+    make_name: '請輸入Controller名 (複数形)'
+    make_actions: '要添加Actions嗎？'
+    select_actions: '請選擇Action <可按空白鍵複選,other可自定義>'
+    make_action_name: '請輸入Action名'
+    make_action_continue: '要繼續添加Action嗎？'
+  helper:
+    make_name: '請輸入Helper名 (例：helper_name)'
+  job:
+    make_name: '請輸入Job名 (例：job_name)'
+  mailbox:
+    make_name: '請輸入MailBox名 (例：mailbox_name)'
+  mailer:
+    make_name: '請輸入Mailer名 (例：mailer_name)'
+    make_actions: '要添加Actions嗎？'
+    make_action_name: '請輸入Action名 (例：subscribed)'
+    make_action_continue: '要繼續添加Action嗎？'
+  migration:
+    make_name: '請輸入Migration名(例: AddNameToUsers・Users)'
+    make_column: '要定義欄位嗎？'
+    make_column_name: '請輸入欄位名'
+    choose_column_type: '請選擇欄位類型'
+    make_column_continue: '要繼續定義欄位馬？'
+  model:
+    make_name: '請輸入Model名(複數形)'
+    make_column: '要定義欄位嗎？'
+    make_column_name: '請輸入欄位名'
+    choose_column_type: '請選擇欄位類型'
+    make_column_continue: '要繼續定義欄位馬？'
+  resource:
+    make_name: '請輸入Resource名(複數形)'
+    make_column: '要定義欄位嗎？'
+    make_column_name: '請輸入欄位名'
+    choose_column_type: '請選擇欄位類型'
+    make_column_continue: '要繼續定義欄位馬？'
+  task:
+    make_name: '請輸入Task名'
+    make_actions: '要添加Actions嗎？'
+    make_action_name: '請輸入Action名 (例：action_name)'
+    make_action_continue: '要繼續添加Action嗎？'

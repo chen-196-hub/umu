@@ -2,6 +2,7 @@
 
 require_relative 'validation'
 require_relative '../beautifica/beautifica'
+require 'i18n'
 
 module Umu
   # Inputter is a module for inputting.
@@ -14,7 +15,7 @@ module Umu
       while is_empty
         cover(2)
         puts "\e[1A"
-        puts "#{content} #{red('必須項目です')}"
+        puts "#{content} #{red(I18n.t('inputter.required'))}"
         input_val = gets
         is_empty = input_val.chomp == ''
       end
@@ -24,14 +25,14 @@ module Umu
         while is_overlap
           cover(2)
           puts "\e[1A"
-          puts "#{content} #{red("#{input_val.chomp}は重複です")}"
+          puts "#{content} #{red("#{input_val.chomp} #{I18n.t('inputter.is_overlap')}")}"
           input_val = gets
 
           is_empty = input_val.chomp == ''
           while is_empty
             cover(2)
             puts "\e[1A"
-            puts "#{content} #{red('必須項目です')}"
+            puts "#{content} #{red(I18n.t('inputter.required'))}"
             input_val = gets
             is_empty = input_val.chomp == ''
           end

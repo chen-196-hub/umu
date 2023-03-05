@@ -1,2 +1,59 @@
 en:
   umu: 'What do you want to Generator?'
+  affirm: 'Yes'
+  deny: 'No'
+  inputter:
+    required: 'Is required'
+    is_overlap: 'is already exists'
+  common:
+    make_options: 'Add options?'
+    add_option: 'Please enter an option'
+    run_command: 'Do you want to execute the above command? '
+  benchmark:
+    make_name: 'Please enter a benchmark name. (ex: benchmark_name)'
+  channel:
+    make_name: 'Please enter a channel name. (ex: channel_name)'
+    make_actions: 'Do you want to add an action? '
+    make_action_name: 'Please enter action name. (ex: subscribed)'
+    make_action_continue: 'Continue to add actions?'
+  controller:
+    make_name: 'Please enter a controller name (Plural)'
+    make_actions: 'Do you want to add an action? '
+    select_actions: 'Please select action. <Pass the <space> to select>'
+    make_action_name: 'Please enter action name.'
+    make_action_continue: 'Continue to add actions?'
+  helper:
+    make_name: 'Please enter a helper name (ex: helper_name)'
+  job:
+    make_name: 'Please enter a job name (ex: job_name)'
+  mailbox:
+    make_name: 'Please enter a mailbox name (ex: mailbox_name)'
+  mailer:
+    make_name: 'Please enter a mailer name (ex: mailer_name)'
+    make_actions: 'Do you want to add action? '
+    make_action_name: 'Please enter action name. (ex: subscribed)'
+    make_action_continue: 'Continue to add actions?'
+  migration:
+    make_name: 'Please enter a migration name(ex: AddNameToUsers・Users)'
+    make_column: 'Do you want to add column?'
+    make_column_name: 'Please enter column name.'
+    choose_column_type: 'Please choose column type'
+    make_column_continue: 'Continue to add colum ?'
+  model: 
+    make_name: 'Please enter a model name.'
+    make_column: 'Do you want to add column?'
+    make_column_name: 'Please enter column name.'
+    choose_column_type: 'Please choose column type'
+    make_column_continue: 'Continue to add colum ?'
+  resource:
+    make_name: 'Please enter a resource name.'
+    make_column: 'Do you want to add column?'
+    make_column_name: 'Please enter column name.'
+    choose_column_type: 'Please choose column type.'
+    make_column_continue: 'Continue to add colum ?'
+  task:
+    make_name: 'Please enter a task name'
+    make_actions: 'Do you want to add action? '
+    make_action_name: 'Please enter action name. (ex: action_name)'
+    make_action_continue: 'Continue to add actions?'
+  

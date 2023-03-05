@@ -22,7 +22,6 @@ module Umu
       umu_lang = YAML.load_file(umu_lang_path)
       lang = umu_lang['language']
       I18n.locale = lang
-      # puts I18n.t(:hello_world)
     end
 
     def self.prompt_language

@@ -1,2 +1,58 @@
 ja:
   umu: '何を生成しますか?'
+  affirm: 'はい'
+  deny: 'いいえ'
+  inputter:
+    required: '必須項目です'
+    is_overlap: 'は重複です'
+  common:
+    make_options: 'オプションを追加しますか？'
+    add_option: 'オプションを入力してください'
+    run_command: '上記コマンドを実行しますか？'
+  benchmark:
+    make_name: 'ベンチマーク名を入力してください (例：benchmark_name)'
+  channel:
+    make_name: 'チャネル名を入力してください (例：channel_name)'
+    make_actions: 'アクションを追加しますか？'
+    make_action_name: 'アクション名を入力してください (例：subscribed)'
+    make_action_continue: 'アクション追加続きますか？'
+  controller:
+    make_name: 'コントローラー名を入力してください (複数)'
+    make_actions: 'アクションを追加しますか？'
+    select_actions: 'アクションを選択してください。<スペースキーで選択できます>'
+    make_action_name: 'アクション名を入力してください'
+    make_action_continue: 'アクション追加続きますか？'
+  helper:
+    make_name: 'ヘルパー名を入力してください (例：helper_name)'
+  job:
+    make_name: 'ジョブ名を入力してください (例：job_name)'
+  mailbox:
+    make_name: 'メールボックス名を入力してください (例：mailbox_name)'
+  mailer:
+    make_name: 'メーラー名を入力してください (例：mailer_name)'
+    make_actions: 'アクションを追加しますか？'
+    make_action_name: 'アクション名を入力してください (例：subscribed)'
+    make_action_continue: 'アクション追加続きますか？'
+  migration:
+    make_name: 'マイグレーション名を入力してください(例: AddNameToUsers・Users)'
+    make_column: 'カラム生成しますか？'
+    make_column_name: 'カラム名を入力してください'
+    choose_column_type: 'タイプを選んでください'
+    make_column_continue: 'カラムを作り続けますか？'
+  model:
+    make_name: 'モデル名を入力してください (単数)'
+    make_column: 'カラム生成しますか？'
+    make_column_name: 'カラム名を入力してください'
+    choose_column_type: 'タイプを選んでください'
+    make_column_continue: 'カラムを作り続けますか？'
+  resource:
+    make_name: 'リソース名を入力してください (単数)'
+    make_column: 'カラム生成しますか？'
+    make_column_name: 'カラム名を入力してください'
+    choose_column_type: 'タイプを選んでください'
+    make_column_continue: 'カラムを作り続けますか？'
+  task:
+    make_name: 'タスク名を入力してください (例：task_name)'
+    make_actions: 'アクションを追加しますか？'
+    make_action_name: 'アクション名を入力してください (例：action_name)'
+    make_action_continue: 'アクション追加続きますか？'
