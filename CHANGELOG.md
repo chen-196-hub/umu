@@ -1,5 +1,14 @@
 ## [Unreleased]
 
+- Language setting
+
+## [0.1.4] - 2023-03-05
+
+- fix some bug
+- refactor
+- fill spec
+- modify some setting
+
 ## [0.1.3] - 2023-03-01
 
 - fix:folder name && some bug is RoR
