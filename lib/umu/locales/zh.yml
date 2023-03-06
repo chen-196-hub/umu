@@ -40,7 +40,7 @@ zh:
     choose_column_type: '請選擇欄位類型'
     make_column_continue: '要繼續定義欄位馬？'
   model:
-    make_name: '請輸入Model名(複數形)'
+    make_name: '請輸入Model名(單數形)'
     make_column: '要定義欄位嗎？'
     make_column_name: '請輸入欄位名'
     choose_column_type: '請選擇欄位類型'
