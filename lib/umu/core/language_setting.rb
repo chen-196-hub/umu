@@ -8,18 +8,17 @@ I18n.load_path = Dir[File.join(File.dirname(__FILE__), '..', 'locales', '*.yml')
 module Umu
   # LanguageSetting is a module for setting language.
   class LanguageSetting
+    extend Template
     LANG = {
       en: 'English',
       zh: '中文',
       ja: '日本語'
     }.freeze
-    extend Template
+    LANG_PATH = File.join(File.dirname(__FILE__), '../../..', '.umu_lang')
 
     def self.setup_language
-      umu_lang_path = File.join(Dir.pwd, '.umu_lang')
-
-      save_language_choice(prompt_language) unless File.exist?(umu_lang_path)
-      umu_lang = YAML.load_file(umu_lang_path)
+      save_language_choice(prompt_language) unless File.exist?(LANG_PATH)
+      umu_lang = YAML.load_file(LANG_PATH)
       lang = umu_lang['language']
       I18n.locale = lang
     end
@@ -34,10 +33,9 @@ module Umu
     end
 
     def self.save_language_choice(lang)
-      umu_lang_path = File.join(Dir.pwd, '.umu_lang')
       umu_lang = {}
       umu_lang['language'] = lang
-      File.write(umu_lang_path, umu_lang.to_yaml)
+      File.write(LANG_PATH, umu_lang.to_yaml)
     end
   end
 end
