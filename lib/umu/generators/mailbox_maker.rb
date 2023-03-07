@@ -16,7 +16,7 @@ module MailboxMaker
       is_make_options = Umu::Selector.single_choice(I18n.t('common.make_options'))
       cover(1)
       options = ''
-      options = Umu::Inputter.input(I18n.t('common.add_name'), true) if is_make_options
+      options = Umu::Inputter.input(I18n.t('common.add_option'), true) if is_make_options
       cover(1) if is_make_options
       command = command('mailbox', mailbox_name, options)
       cover(1)
