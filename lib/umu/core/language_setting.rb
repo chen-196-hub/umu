@@ -26,8 +26,10 @@ module Umu
 
     def self.prompt_language
       logo
-
-      item = Umu::Selector.radio(LANG.values, 'Please select a language:')
+      content = 'Please select a language:'
+      item = Umu::Selector.radio(LANG.values, content)
+      cover(1)
+      puts "#{content} #{green(item)}"
       LANG.key(item)
     end
 
