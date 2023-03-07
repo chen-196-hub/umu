@@ -37,5 +37,10 @@ module Umu
       umu_lang['language'] = lang
       File.write(LANG_PATH, umu_lang.to_yaml)
     end
+
+    def self.change_language
+      File.exist?(LANG_PATH) ? File.delete(LANG_PATH) : nil
+      setup_language
+    end
   end
 end
