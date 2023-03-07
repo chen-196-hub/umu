@@ -2,7 +2,7 @@
 
 # Umu (prototype)
 
-Umu is a framework that supports you to make & run command in Ruby on Rails
+Umu 是一個支援在Ruby on Rails中製作和執行`rails generator`指令的框架
 
 
 
