@@ -13,15 +13,15 @@ https://user-images.githubusercontent.com/78460152/222332886-50337710-4fc8-4437-
 
 ## Installation
 
-Install the gem and add to the application's Gemfile by executing:
-
-    $ bundle add umu
-
-or
+Add to the application's Gemfile by executing:
 ```ruby
 group :development, :test do
     gem 'umu'
 end
+```
+then 
+```
+bundle install
 ```
 ## Usage
     bundle exec umu 
