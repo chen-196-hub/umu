@@ -11,19 +11,25 @@ https://user-images.githubusercontent.com/78460152/222332886-50337710-4fc8-4437-
 
 
 # 安裝
-透過執行以下命令安裝 gem，並將其加入應用程式的 Gemfile 中：
+透過執行以下命令安裝 gem
 
     $ bundle add umu
 
-or
+將其加入應用程式的 Gemfile 中：
 ```ruby
 group :development, :test do
     gem 'umu'
 end
 ```
+然後執行
+```
+bundle install
+```
 
 # 用法
+```
 bundle exec umu
+```
 
 ## Doc
 
