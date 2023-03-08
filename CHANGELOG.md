@@ -1,6 +1,9 @@
 ## [Unreleased]
 
-- Language setting
+## [0.1.5]
+
+- multilingual localization (en,ja,zh)
+- fix: some bug
 
 ## [0.1.4] - 2023-03-05
 
