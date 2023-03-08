@@ -1,5 +1,5 @@
 <div align="center">
-    English | <a href="https://github.com/chen-196-hub/umu/blob/main/README.jp.md">日本語</a> | <a href="https://github.com/chen-196-hub/umu/blob/main/README.zh.md">中文</a>
+    English | <a href="https://github.com/chen-196-hub/umu/blob/main/README.ja.md">日本語</a> | <a href="https://github.com/chen-196-hub/umu/blob/main/README.zh.md">中文</a>
 </div>
 
 # Umu (prototype)
