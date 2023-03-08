@@ -8,15 +8,16 @@ https://user-images.githubusercontent.com/78460152/222332886-50337710-4fc8-4437-
 
 # インストール方法
 
-gemをインストールし、アプリケーションのGemfileに追加するには、次のコマンドを実行します。
+アプリケーションのGemfileに追加する
 
-    $ bundle add umu
-
-or
 ```ruby
 group :development, :test do
     gem 'umu'
 end
+```
+そして
+```
+bundle install 
 ```
 
 # 使用方法
