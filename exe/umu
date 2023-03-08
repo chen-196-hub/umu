@@ -1,4 +1,25 @@
 #!/usr/bin/env ruby
 require 'umu'
+require 'optparse'
 
-Umu.generator
+options = {}
+
+OptionParser.new do |opts|
+  opts.on("-l", "--lang") do
+    options[:lang] = true
+  end
+  opts.on("-h", "--help") do
+    options[:help] = true
+  end
+end.parse!
+
+
+if options[:lang]
+  Umu::LanguageSetting.change_language
+elsif options[:help]
+  puts 'UMU '
+  puts 'bundle exec umu [options]'
+  puts '   -l, --lang: change language'
+else
+  Umu.generator
+end

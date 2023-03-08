@@ -45,4 +45,17 @@ RSpec.describe 'colors' do
                      '-test')).to eq('rails generate test test_name sub_test_name -test')
     }
   end
+
+  context '#logo' do
+    it do
+      expect { logo }.to output(<<-'UMU').to_stdout
+     _   _
+    | | | |_ __ ___  _   _ 
+    | | | | '_ ` _ \| | | |
+    | |_| | | | | | | |_| |
+     \___/|_| |_| |_|\__,_|
+
+    UMU
+    end
+  end
 end

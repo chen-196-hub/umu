@@ -1,3 +1,7 @@
+<div align="center">
+    English | <a href="https://github.com/chen-196-hub/umu/blob/main/README.jp.md">日本語</a> | <a href="https://github.com/chen-196-hub/umu/blob/main/README.zh.md">中文</a>
+</div>
+
 # Umu (prototype)
 
 Umu is a framework that supports you to make & run command in Ruby on Rails
@@ -22,6 +26,20 @@ end
 ## Usage
     bundle exec umu 
 
+## Doc
+
+#### Change language
+```
+bundle exec umu --lang
+# or
+bundle exec umu -l
+```
+#### Check Options
+```
+bundle exec umu --help
+# or
+bundle exec umu -h
+```
 
 ## Contributing
 
@@ -33,4 +51,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Umu project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/umu/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the Umu project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/chen-196-hub/umu/blob/main/CODE_OF_CONDUCT.md).
