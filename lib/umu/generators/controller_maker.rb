@@ -29,7 +29,9 @@ module ControllerMaker
         actions = Umu::Selector.checkbox(ACTIONS, I18n.t('controller.select_actions'))
         cover(1)
         cover(1)
-        show_command('controller', controller_name, actions.join(' '))
+        show_actions = actions.dup
+        show_actions.delete('other')
+        show_command('controller', controller_name, show_actions.join(' '))
         if actions.include?('other')
           make_action = true
           actions.delete('other')
