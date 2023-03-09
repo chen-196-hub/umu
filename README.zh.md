@@ -6,7 +6,7 @@ Umu 是一個支援在Ruby on Rails中製作和執行`rails generator`指令的�
 
 
 
-https://user-images.githubusercontent.com/78460152/222332886-50337710-4fc8-4437-b82a-f1a64edd95f3.mov
+https://user-images.githubusercontent.com/78460152/223889166-b69a6a65-f655-4b86-aae4-900d5ddd5b48.mov
 
 
 
