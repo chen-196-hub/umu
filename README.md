@@ -8,7 +8,11 @@ Umu is a framework that supports you to make & run command in Ruby on Rails
 
 
 
-https://user-images.githubusercontent.com/78460152/222332886-50337710-4fc8-4437-b82a-f1a64edd95f3.mov
+
+
+https://user-images.githubusercontent.com/78460152/223889166-b69a6a65-f655-4b86-aae4-900d5ddd5b48.mov
+
+
 
 
 ## Installation
