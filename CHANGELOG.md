@@ -1,5 +1,10 @@
 ## [Unreleased]
 
+## [0.1.6]
+
+- fix: some bug
+- update README(ja, en, zh)
+
 ## [0.1.5]
 
 - multilingual localization (en,ja,zh)
