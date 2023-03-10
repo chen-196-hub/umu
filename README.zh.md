@@ -15,7 +15,7 @@ https://user-images.githubusercontent.com/78460152/223889166-b69a6a65-f655-4b86-
 
     $ bundle add umu
 
-將其加入應用程式的 Gemfile 中：
+或將其加入Rails on Rails的 Gemfile 中：
 ```ruby
 group :development, :test do
     gem 'umu'
